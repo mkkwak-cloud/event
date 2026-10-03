@@ -9,3 +9,4 @@ scripts/ 안 파일: collect.py(행사 수집), build_dashboard.py(대시보드 
 out/dashboard/: 대시보드 화면. out/logs/: 실행 기록. out/probe/: 점검 결과.
 scripts/direct_parsers.py(무료 직접 읽기), probe_free.py(무료 읽기 시험), collect.py.bak(고치기 전 백업). data/page_hash.json(바뀐 곳 감지용 기록), data/_backup_20261003/(백업).
 주간 절차 — 월요일 07:00 자동 실행(수집·대시보드·Notion)이 끝나면, 대화에서 "주간 마무리"라고 하면 다음을 한다: (1) out/dashboard/index.html 을 기존 Claude 아티팩트(주소는 out/dashboard_url.txt)에 같은 주소로 덮어 올린다 (2) 수집 오류·건수 급감이 없는지 out/logs 최신 기록을 확인한다 (3) 종료된 Notion 행 정리가 남았는지 알린다 (4) out/dashboard/index.html 을 이 폴더 맨 위의 index.html 로 복사해 둔다(GitHub 페이지용, 올리는 건 "cmt" 때). 자동 실행은 아티팩트를 직접 못 올리므로 이 단계는 대화에서만 가능하다. GitHub 커밋·올리기는 "cmt"라고 할 때만.
+앱(PWA) 파일: 맨 위의 manifest.webmanifest(앱 이름·아이콘 설정), sw.js(오프라인용), icons/(앱 아이콘, scripts/make_icons.py 로 만듦). 대시보드 틀은 out/dashboard/template.html 이고, 앱 설치 버튼·서비스워커 등록이 거기에 들어 있다. GitHub 페이지에서만 앱 설치가 동작한다.

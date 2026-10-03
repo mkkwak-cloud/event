@@ -10,6 +10,8 @@
 
 - Claude 아티팩트(https://claude.ai/artifact/WfdYxzZQP4AqQ7Rm6YnM33)에 2026-10-03 판(172건) 올림. 매주 주간 마무리 절차는 CLAUDE.md 하단.
 
+- 갤럭시용 앱(PWA) 적용: 맨 위 manifest.webmanifest·sw.js·icons/ 와 template.html 수정. 아직 커밋 안 함. 올린 뒤 폰에서 설치 확인 필요.
+
 ## 다음 할 일
 1. 종료된 39행 Notion 정리(권한 거부로 보류) — 사용자가 직접 지우거나 권한 허용 후 재시도.
 2. 새 대시보드(깨짐 수정본)를 GitHub에 올릴지 결정 (사용자가 "cmt" 해야 커밋).
