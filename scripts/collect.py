@@ -396,6 +396,11 @@ def from_firecrawl(sources, today, log, report, force=False):
     key = firecrawl_key()
     out = []
     hashes = json.load(open(HASH_PATH, encoding="utf-8")) if os.path.exists(HASH_PATH) else {}
+    raw_path = os.path.join(DATA, "raw.json")
+    prev = {}  # 지난 수집분의 곳별 건수 (이번 추출이 너무 적으면 그 결과를 '변경 없음' 기준으로 굳히지 않으려고)
+    if os.path.exists(raw_path):
+        for e in json.load(open(raw_path, encoding="utf-8"))["raw"]:
+            prev[e["source"]] = prev.get(e["source"], 0) + 1
     for name, group, url, *_ in sources:
         fp = None
         direct = direct_extract(name, url) if name in DIRECT_PARSERS else None
@@ -455,8 +460,11 @@ def from_firecrawl(sources, today, log, report, force=False):
             kept += 1
         report[name] = f"{kept}건 (본문 불일치 제외 {dropped})" + (" · 무료 직접 읽기" if direct else "")
         print(f"  {name}: 추출 {len(items)} → 채택 {kept}, 본문 불일치 제외 {dropped}", file=log)
-        if fp:
+        if fp and kept >= 0.7 * prev.get(name, 0):  # 추출이 지난번의 70%에도 못 미치면 불완전한 것 -> 다음에 다시 읽음
             hashes[name] = {"hash": fp, "full": today.isoformat()}
+        elif fp:
+            hashes.pop(name, None)
+            print(f"  {name}: 추출 {kept}건 < 지난번 {prev.get(name, 0)}건의 70% → 다음에 다시 읽음", file=log)
     json.dump(hashes, open(HASH_PATH, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return out
 

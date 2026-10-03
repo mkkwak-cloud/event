@@ -88,7 +88,28 @@ def korcham(h, base):
     return out
 
 
+def coex(h, base):
+    out, seen = [], set()
+    for blk in re.findall(r"(?s)<div class='BlogEventItem'>(.*?)</a>", h):
+        link = re.search(r"href='([^']+)'", blk)
+        tit = re.search(r"<h4 class='BlogEventItemCont-tit'>(.*?)</h4>", blk, re.S)
+        dt = re.search(r"<div class='BlogEventItemCont-date'>(.*?)</div>", blk, re.S)
+        if not (tit and dt):
+            continue
+        hall = re.search(r"<div class='BlogEventItemCont-hall'>(.*?)</div>", blk, re.S)
+        cate = re.search(r"<p class='BlogEventItemCont-cate[^']*'>(.*?)</p>", blk, re.S)
+        title, dates = _t(tit.group(1)), _dates(_t(dt.group(1)))
+        if (title, dates[:1] and dates[0]) in seen:  # 목록형·달력형이 같은 행사를 두 번 보여준다
+            continue
+        seen.add((title, dates[:1] and dates[0]))
+        url = htmllib.unescape(link.group(1)).split("?")[0] if link else base
+        out.append(_item(title, dates, ("코엑스 " + _t(hall.group(1))).strip() if hall else "코엑스", url,
+                         _t(cate.group(1)) if cate else "", host="코엑스"))
+    return out
+
+
 DIRECT_PARSERS = {
+    "코엑스": coex,
     "전자신문": etnews,
     "KIoT": kiot,
     "대한기계학회": ksme,
