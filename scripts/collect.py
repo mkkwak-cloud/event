@@ -367,10 +367,23 @@ def page_fingerprint(url):
     return hashlib.sha1(re.sub(r"\s+", "", h).encode("utf-8")).hexdigest()
 
 
+def http_get_auto(url, timeout=30):
+    """화면이 선언한 글자 방식(charset)대로 해석해서 받는다 (euc-kr 등 대응)."""
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        raw = r.read()
+        m = re.search(rb"charset=[\"']?([\w-]+)", raw[:4000])
+        enc = m.group(1).decode() if m else (r.headers.get_content_charset() or "utf-8")
+    try:
+        return raw.decode(enc, "replace")
+    except LookupError:
+        return raw.decode("utf-8", "replace")
+
+
 def direct_extract(name, url):
     """firecrawl 없이 무료로 읽는다. 화면을 못 받았거나 0건이면 None (→ firecrawl로 되돌아감)."""
     try:
-        h = http_get(url)
+        h = http_get_auto(url)
         items = DIRECT_PARSERS[name](h, url)
     except Exception:
         return None
