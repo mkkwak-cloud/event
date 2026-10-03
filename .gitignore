@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+_trash/
+*.tmp
+__pycache__/
+*.pyc
+collect.py.bak
+data/_backup_*/

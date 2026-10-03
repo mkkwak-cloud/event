@@ -1,0 +1,266 @@
+{
+ "코엑스": {
+  "url": "https://www.coex.co.kr/event/full-schedules/",
+  "status": 200,
+  "bytes": 84239,
+  "cached_titles": 11,
+  "titles_visible": 8,
+  "same_after_5s": true
+ },
+ "킨텍스": {
+  "url": "https://www.kintex.com/web/ko/event/clist.do",
+  "status": 200,
+  "bytes": 69955,
+  "cached_titles": 6,
+  "titles_visible": 5,
+  "same_after_5s": true
+ },
+ "벡스코": {
+  "url": "https://www.bexco.co.kr/kor/CMS/EventScheduleMgr/list.do?mCode=MN214",
+  "status": 200,
+  "bytes": 81220,
+  "cached_titles": 16,
+  "titles_visible": 6,
+  "same_after_5s": true
+ },
+ "엑스코": {
+  "url": "https://www.exco.co.kr/schedule/sub01.html",
+  "status": 200,
+  "bytes": 159413,
+  "cached_titles": 12,
+  "titles_visible": 0,
+  "same_after_5s": true
+ },
+ "수원컨벤션센터": {
+  "url": "https://www.scc.or.kr/events-3/",
+  "status": 200,
+  "bytes": 880188,
+  "cached_titles": 14,
+  "titles_visible": 8,
+  "same_after_5s": true
+ },
+ "KATECH 교육": {
+  "url": "https://edu.katech.re.kr/core/?cid=24",
+  "status": 200,
+  "bytes": 49785,
+  "cached_titles": 9,
+  "titles_visible": 9,
+  "same_after_5s": true
+ },
+ "KATECH": {
+  "url": "https://www.katech.re.kr",
+  "status": 200,
+  "bytes": 175444,
+  "cached_titles": 1,
+  "titles_visible": 1,
+  "same_after_5s": true
+ },
+ "KAMA": {
+  "url": "https://www.kama.or.kr",
+  "status": 200,
+  "bytes": 56114,
+  "cached_titles": 2,
+  "titles_visible": 0,
+  "same_after_5s": true
+ },
+ "KSAE": {
+  "url": "https://www.ksae.org",
+  "status": 200,
+  "bytes": 45,
+  "cached_titles": 2,
+  "titles_visible": 0,
+  "same_after_5s": true
+ },
+ "KSAE 연간일정": {
+  "url": "https://www.ksae.org/bbs/?code=schedule&category=A&mode=tlist",
+  "status": 200,
+  "bytes": 24391,
+  "cached_titles": 7,
+  "titles_visible": 7,
+  "same_after_5s": true
+ },
+ "대한기계학회": {
+  "url": "https://ksme.or.kr/conference/conference01_1.asp?AC=3&top_param=1&sub_param=4",
+  "status": 200,
+  "bytes": 40768,
+  "cached_titles": 7,
+  "titles_visible": 7,
+  "same_after_5s": true
+ },
+ "한국자동차공학한림원": {
+  "url": "https://www.kaae.kr/",
+  "status": 200,
+  "bytes": 20626,
+  "cached_titles": 1,
+  "titles_visible": 1,
+  "same_after_5s": false
+ },
+ "한국자동차모빌리티안전학회": {
+  "url": "https://www.kasa.kr/",
+  "status": 200,
+  "bytes": 52730,
+  "cached_titles": 1,
+  "titles_visible": 1,
+  "same_after_5s": true
+ },
+ "한국정보과학회": {
+  "url": "https://www.kiise.or.kr/",
+  "status": 200,
+  "bytes": 298,
+  "cached_titles": 5,
+  "titles_visible": 0,
+  "same_after_5s": true
+ },
+ "한국인공지능학회": {
+  "url": "https://aiassociation.kr/",
+  "status": 200,
+  "bytes": 34358,
+  "cached_titles": 1,
+  "titles_visible": 1,
+  "same_after_5s": true
+ },
+ "KOSA 행사": {
+  "url": "https://www.sw.or.kr/site/sw/ex/board/List.do?cbIdx=292&cateCd=NTC_C002",
+  "status": 200,
+  "bytes": 77129,
+  "cached_titles": 9,
+  "titles_visible": 7,
+  "same_after_5s": true
+ },
+ "KOSA 교육": {
+  "url": "https://www.sw.or.kr/site/sw/edu/selectEduListGallery.do",
+  "status": 200,
+  "bytes": 59253,
+  "cached_titles": 9,
+  "titles_visible": 8,
+  "same_after_5s": true
+ },
+ "한국인공지능협회": {
+  "url": "https://koraia.org/default/mp5/sub2.php",
+  "status": 200,
+  "bytes": 68788,
+  "cached_titles": 0,
+  "titles_visible": 0,
+  "same_after_5s": true
+ },
+ "KIoT": {
+  "url": "https://www.kiot.or.kr/cms/list?CM_CODE=89qcz4",
+  "status": 200,
+  "bytes": 26592,
+  "cached_titles": 10,
+  "titles_visible": 10,
+  "same_after_5s": true
+ },
+ "대한상공회의소": {
+  "url": "https://www.korcham.net/nCham/Service/Event/appl/KcciNewsList.asp",
+  "status": 200,
+  "bytes": 45234,
+  "cached_titles": 6,
+  "titles_visible": 6,
+  "same_after_5s": true
+ },
+ "한국경제인협회": {
+  "url": "https://www.fki.or.kr/kor/news/notice.do",
+  "status": 200,
+  "bytes": 35360,
+  "cached_titles": 1,
+  "titles_visible": 1,
+  "same_after_5s": true
+ },
+ "FKI 세미나": {
+  "url": "https://seminar.fki.or.kr",
+  "status": 200,
+  "bytes": 83,
+  "cached_titles": 1,
+  "titles_visible": 0,
+  "same_after_5s": true
+ },
+ "전자신문": {
+  "url": "https://conference.etnews.com/conf_list.html?t=ing",
+  "status": 200,
+  "bytes": 15201,
+  "cached_titles": 6,
+  "titles_visible": 6,
+  "same_after_5s": true
+ },
+ "파이낸셜뉴스": {
+  "url": "https://event.fnnews.com/",
+  "status": 200,
+  "bytes": 47853,
+  "cached_titles": 3,
+  "titles_visible": 3,
+  "same_after_5s": true
+ },
+ "디지털데일리": {
+  "url": "https://www.ddaily.co.kr/seminar",
+  "status": 200,
+  "bytes": 30919,
+  "cached_titles": 1,
+  "titles_visible": 1,
+  "same_after_5s": true
+ },
+ "아이뉴스24": {
+  "url": "https://www.inews24.com/",
+  "status": 200,
+  "bytes": 213291,
+  "cached_titles": 2,
+  "titles_visible": 1,
+  "same_after_5s": true
+ },
+ "테크M": {
+  "url": "https://www.techm.kr/",
+  "status": 200,
+  "bytes": 134653,
+  "cached_titles": 1,
+  "titles_visible": 0,
+  "same_after_5s": false
+ },
+ "NIPA": {
+  "url": "https://www.nipa.kr/home/2-1",
+  "status": 200,
+  "bytes": 91443,
+  "cached_titles": 0,
+  "titles_visible": 0,
+  "same_after_5s": true
+ },
+ "NIA": {
+  "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/List.do?cbIdx=99835",
+  "status": 200,
+  "bytes": 255219,
+  "cached_titles": 0,
+  "titles_visible": 0,
+  "same_after_5s": true
+ },
+ "IITP": {
+  "url": "https://www.iitp.kr",
+  "status": 200,
+  "bytes": 53,
+  "cached_titles": 0,
+  "titles_visible": 0,
+  "same_after_5s": true
+ },
+ "KIAT": {
+  "url": "https://www.kiat.or.kr/front/user/main.do",
+  "status": 200,
+  "bytes": 66445,
+  "cached_titles": 0,
+  "titles_visible": 0,
+  "same_after_5s": true
+ },
+ "KEIT": {
+  "url": "https://www.keit.re.kr/menu.es?mid=a10301010000",
+  "status": 200,
+  "bytes": 56578,
+  "cached_titles": 0,
+  "titles_visible": 0,
+  "same_after_5s": true
+ },
+ "스마트제조혁신추진단": {
+  "url": "https://www.smart-factory.kr",
+  "status": 200,
+  "bytes": 1101,
+  "cached_titles": 0,
+  "titles_visible": 0,
+  "same_after_5s": true
+ }
+}

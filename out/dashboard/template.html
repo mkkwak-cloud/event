@@ -1,0 +1,313 @@
+<meta charset="utf-8">
+<title>모빌리티·AI 행사 레이더</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --ground:#edf3fa; --ground-2:#e3ecf7; --surface:#ffffff; --surface-2:#f5f8fc;
+  --ink:#14233d; --ink-2:#3c4c66; --muted:#6b7a92; --line:#d9e3ef; --line-2:#e8eef6;
+  --navy:#1e3e78; --navy-ink:#ffffff; --navy-soft:#e6eefa; --focus:#3d6fd1;
+  --chip:#eaf1fb; --chip-ink:#27467f;
+  --ok-bg:#e3f4ea; --ok-ink:#1d6b41; --warn-bg:#fdecc8; --warn-ink:#8a5200;
+  --hot-bg:#fde2de; --hot-ink:#a3271b; --info-bg:#e4ecfb; --info-ink:#2a4f9c;
+  --off-bg:#edf0f4; --off-ink:#66748a; --new:#d9480f;
+  --shadow:0 1px 2px rgba(20,35,61,.05),0 6px 18px rgba(20,35,61,.05);
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --ground:#0e1522; --ground-2:#101a2a; --surface:#152033; --surface-2:#1a263b;
+  --ink:#e6edf7; --ink-2:#bccae0; --muted:#8b9ab3; --line:#26344b; --line-2:#1f2c41;
+  --navy:#8fb2ee; --navy-ink:#0e1522; --navy-soft:#1d2d4a; --focus:#8fb2ee;
+  --chip:#1d2d4a; --chip-ink:#b9cdf2;
+  --ok-bg:#16372a; --ok-ink:#8fd9ae; --warn-bg:#3d2c0d; --warn-ink:#f3c46d;
+  --hot-bg:#42191a; --hot-ink:#f5a39a; --info-bg:#1b2d4f; --info-ink:#a9c3f5;
+  --off-bg:#1d2638; --off-ink:#8b9ab3; --new:#ff8a4c;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25);
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0e1522; --ground-2:#101a2a; --surface:#152033; --surface-2:#1a263b;
+  --ink:#e6edf7; --ink-2:#bccae0; --muted:#8b9ab3; --line:#26344b; --line-2:#1f2c41;
+  --navy:#8fb2ee; --navy-ink:#0e1522; --navy-soft:#1d2d4a; --focus:#8fb2ee;
+  --chip:#1d2d4a; --chip-ink:#b9cdf2;
+  --ok-bg:#16372a; --ok-ink:#8fd9ae; --warn-bg:#3d2c0d; --warn-ink:#f3c46d;
+  --hot-bg:#42191a; --hot-ink:#f5a39a; --info-bg:#1b2d4f; --info-ink:#a9c3f5;
+  --off-bg:#1d2638; --off-ink:#8b9ab3; --new:#ff8a4c;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--font);color:var(--ink);font-size:14px;line-height:1.5;
+  background:linear-gradient(180deg,var(--ground-2) 0,var(--ground) 320px) var(--ground);min-height:100%}
+.wrap{max-width:1320px;margin:0 auto;padding:24px 16px 48px}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+a{color:inherit}
+.num{font-variant-numeric:tabular-nums}
+
+/* 상단 요약 */
+.top{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.hero{padding:24px 26px 22px}
+.eyebrow{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:var(--navy);letter-spacing:.02em}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--navy)}
+h1{margin:10px 0 12px;font-size:clamp(21px,2.6vw,28px);line-height:1.3;font-weight:700;letter-spacing:-.01em;text-wrap:balance}
+.kinds{display:flex;flex-wrap:wrap;align-items:center;gap:6px;color:var(--muted);font-size:13px}
+.kinds .chip{background:var(--surface);border:1px solid var(--line);color:var(--chip-ink);font-weight:600}
+.updated{display:inline-flex;gap:6px;margin-top:14px;padding:5px 10px;border:1px solid var(--line);border-radius:8px;font-size:12.5px;color:var(--ink-2);background:var(--surface-2)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:18px}
+.stat{text-align:left;border:1px solid var(--line);background:var(--surface-2);border-radius:10px;padding:12px 14px;cursor:pointer;transition:border-color .15s,background .15s}
+.stat:hover{border-color:var(--navy)}
+.stat[aria-pressed="true"]{border-color:var(--navy);background:var(--surface);box-shadow:inset 3px 0 0 var(--navy)}
+.stat .label{font-size:12.5px;color:var(--muted)}
+.stat .value{font-size:26px;font-weight:700;margin-top:2px}
+.stat .hint{font-size:11.5px;color:var(--muted)}
+
+.picks{padding:18px 0 8px;display:flex;flex-direction:column}
+.picks h2{margin:0 18px 10px;font-size:13px;font-weight:600;color:var(--ink-2)}
+.picks ol{list-style:none;margin:0;padding:0}
+.picks li a{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:center;padding:10px 18px;text-decoration:none;border-top:1px solid var(--line-2)}
+.picks li a:hover{background:var(--surface-2)}
+.rank{width:28px;height:28px;border-radius:7px;background:var(--navy);color:var(--navy-ink);display:grid;place-items:center;font-weight:700;font-size:13px}
+.picks .t{font-weight:600;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.picks .s{font-size:12px;color:var(--muted)}
+.picks .empty{padding:14px 18px;color:var(--muted);font-size:13px}
+
+/* 필터 */
+.filters{display:grid;grid-template-columns:minmax(0,1fr) repeat(4,minmax(0,170px));gap:10px;margin-top:18px}
+.field{position:relative}
+.field input,.field select{width:100%;height:44px;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:0 14px;appearance:none;-webkit-appearance:none}
+.field select{padding-right:34px;cursor:pointer}
+.field.sel::after{content:"";position:absolute;right:14px;top:19px;border:5px solid transparent;border-top-color:var(--ink-2);pointer-events:none}
+.field input::placeholder{color:var(--muted)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 12px}
+.tab{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);cursor:pointer;font-weight:600;color:var(--ink-2)}
+.tab .c{font-size:12px;padding:1px 8px;border-radius:999px;background:var(--chip);color:var(--chip-ink)}
+.tab[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--surface)}
+.tab[aria-pressed="true"] .c{background:rgba(255,255,255,.18);color:var(--surface)}
+
+/* 목록 */
+.list{overflow:hidden}
+.thead,.row{display:grid;grid-template-columns:minmax(0,1fr) 150px 110px 160px;gap:14px;align-items:center;padding:14px 20px}
+.thead{font-size:12.5px;font-weight:600;color:var(--muted);background:var(--surface-2);border-bottom:1px solid var(--line)}
+.row{border-bottom:1px solid var(--line-2)}
+.row:last-child{border-bottom:0}
+.row:hover{background:var(--surface-2)}
+.row.soon{box-shadow:inset 3px 0 0 var(--navy)}
+.title-line{display:flex;gap:8px;align-items:flex-start}
+.chip{display:inline-flex;align-items:center;white-space:nowrap;font-size:12px;padding:2px 8px;border-radius:6px;background:var(--chip);color:var(--chip-ink);font-weight:600}
+.title-line a{font-weight:700;font-size:14.5px;text-decoration:none;line-height:1.45}
+.title-line a:hover{text-decoration:underline}
+.new{font-size:10.5px;font-weight:700;color:var(--new);border:1px solid currentColor;border-radius:4px;padding:0 4px;margin-left:2px;vertical-align:2px}
+.meta{margin-top:4px;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
+.meta b{font-weight:600;color:var(--ink-2)}
+.tags{display:inline-flex;flex-wrap:wrap;gap:4px}
+.tag{font-size:11px;padding:0 6px;border-radius:4px;border:1px solid var(--line);color:var(--ink-2)}
+.tag.auto{border-color:transparent;background:var(--navy-soft);color:var(--chip-ink)}
+.status{display:flex;flex-wrap:wrap;gap:6px}
+.pill{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.p-ok{background:var(--ok-bg);color:var(--ok-ink)} .p-warn{background:var(--warn-bg);color:var(--warn-ink)}
+.p-hot{background:var(--hot-bg);color:var(--hot-ink)} .p-info{background:var(--info-bg);color:var(--info-ink)}
+.p-off{background:var(--off-bg);color:var(--off-ink)}
+.region,.when{font-size:13px;color:var(--ink-2)}
+.when small{display:block;color:var(--muted);font-size:11.5px}
+.empty-state{padding:40px 20px;text-align:center;color:var(--muted)}
+.foot{margin-top:18px;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 16px}
+.foot details{flex-basis:100%}
+.foot summary{cursor:pointer;color:var(--ink-2)}
+.srcs{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:4px 16px;margin-top:8px}
+
+@media (max-width:1080px){
+  .top{grid-template-columns:1fr}
+  .filters{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .filters .field:first-child{grid-column:1/-1}
+}
+@media (max-width:760px){
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .thead{display:none}
+  .row{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"t t" "s s" "r w";gap:8px 12px;padding:14px 16px}
+  .row .c-t{grid-area:t}.row .c-s{grid-area:s}.row .c-r{grid-area:r}.row .c-w{grid-area:w;text-align:right}
+  .hero{padding:20px 18px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <section class="top">
+    <div class="panel hero">
+      <div class="eyebrow">자동차·전장·AI/AX 행사 대시보드</div>
+      <h1>모빌리티·AI 업계 행사, 향후 4개월 일정을 한눈에</h1>
+      <div class="kinds" id="kindChips"></div>
+      <div class="updated num" id="updated"></div>
+      <div class="stats" role="group" aria-label="요약">
+        <button class="stat" data-quick="all" aria-pressed="true"><div class="label">전체 행사</div><div class="value num" id="st-all">0</div><div class="hint">향후 4개월</div></button>
+        <button class="stat" data-quick="new" aria-pressed="false"><div class="label">이번 주 신규</div><div class="value num" id="st-new">0</div><div class="hint">이번 갱신에서 처음 발견</div></button>
+        <button class="stat" data-quick="auto" aria-pressed="false"><div class="label">자동차·전장</div><div class="value num" id="st-auto">0</div><div class="hint">자율주행·SDV·배터리·수소차 등</div></button>
+        <button class="stat" data-quick="ax" aria-pressed="false"><div class="label">AX 전환</div><div class="value num" id="st-ax">0</div><div class="hint">AI 전환·AX 전략·실행 사례</div></button>
+      </div>
+    </div>
+    <aside class="panel picks">
+      <h2>마감 전 추천 행사</h2>
+      <ol id="picks"></ol>
+    </aside>
+  </section>
+
+  <div class="filters">
+    <div class="field"><label class="sr" for="q" hidden>검색</label><input id="q" type="search" placeholder="행사명, 주최, 분야, 지역으로 검색" autocomplete="off"></div>
+    <div class="field sel"><select id="f-field" aria-label="분야"><option value="">전체 분야</option></select></div>
+    <div class="field sel"><select id="f-region" aria-label="지역"><option value="">전체 지역</option></select></div>
+    <div class="field sel"><select id="f-group" aria-label="출처 구분"><option value="">전체 출처</option></select></div>
+    <div class="field sel"><select id="f-sort" aria-label="정렬">
+      <option value="start">개최일순</option><option value="deadline">신청 마감순</option><option value="new">신규 먼저</option>
+    </select></div>
+  </div>
+
+  <div class="tabs" role="group" aria-label="행사 성격 (중복 선택 가능)" id="tabs"></div>
+
+  <section class="panel list" aria-live="polite">
+    <div class="thead"><div>행사명</div><div>상태</div><div>지역</div><div>일정</div></div>
+    <div id="rows"></div>
+  </section>
+
+  <div class="foot" id="foot"></div>
+</div>
+
+<script type="application/json" id="data">/*__DATA__*/</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('data').textContent);
+  var EV = D.events;
+  var KINDS = ['전시회','학술대회','컨퍼런스·포럼','세미나','교육','웨비나'];
+  var AUTO = ['자율주행','SDV','전기차','배터리','수소차','E/E아키텍처','ECU','AUTOSAR','차량용반도체','ASPICE','ISO26262','SOTIF','ISO21434','CMMI'];
+  var today = new Date(); today.setHours(0,0,0,0);
+  var DAY = 86400000;
+  function d(s){ if(!s) return null; var p=s.split('-'); return new Date(+p[0],p[1]-1,+p[2]); }
+  function diff(s){ var x=d(s); return x? Math.round((x-today)/DAY) : null; }
+  function fmt(s){ var x=d(s); return x? ("'"+String(x.getFullYear()).slice(2)+'.'+String(x.getMonth()+1).padStart(2,'0')+'.'+String(x.getDate()).padStart(2,'0')) : ''; }
+  function fmtShort(s){ var x=d(s); return x? (String(x.getMonth()+1).padStart(2,'0')+'.'+String(x.getDate()).padStart(2,'0')) : ''; }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+
+  EV.forEach(function(e){
+    e._auto = e.tags.some(function(t){return AUTO.indexOf(t)>=0;});
+    e._ax = e.tags.indexOf('AX전환')>=0;
+    var ds = diff(e.start), de = diff(e.end||e.start), dl = diff(e.deadline);
+    e._ds = ds; e._dl = dl;
+    if (ds<=0 && de>=0) e._st = {k:'ing', t:'진행중', c:'p-ok'};
+    else if (dl!==null && dl<0) e._st = {k:'closed', t:'접수마감', c:'p-off'};
+    else if (dl!==null && dl<=7) e._st = {k:'closing', t:'마감임박', c:'p-hot'};
+    else e._st = {k:'open', t:'접수중', c:'p-warn'};
+    e._closing = e._st.k==='closing';
+    e._hay = [e.title,e.host,e.place,e.region,e.kind,e.tags.join(' '),e.sources.join(' ')].join(' ').toLowerCase();
+  });
+
+  var state = {tabs:[], quick:'all', q:'', field:'', region:'', group:'', sort:'start'};
+  try { var saved = JSON.parse(localStorage.getItem('evr-state')||'{}'); if(['start','deadline','new'].indexOf(saved.sort)>=0) state.sort=saved.sort; } catch(_){}
+
+  // 상단 요약
+  document.getElementById('updated').textContent = '최근 업데이트 '+D.updated+' · 매주 월요일 07:00 갱신';
+  document.getElementById('kindChips').innerHTML = KINDS.map(function(k){return '<span class="chip">'+k+'</span>';}).join('')+'<span>행사 성격별로 나눠 신청 가능한 일정과 마감 임박 행사를 빠르게 확인하세요.</span>';
+  document.getElementById('st-all').textContent = EV.length;
+  document.getElementById('st-new').textContent = EV.filter(function(e){return e.is_new;}).length;
+  document.getElementById('st-auto').textContent = EV.filter(function(e){return e._auto;}).length;
+  document.getElementById('st-ax').textContent = EV.filter(function(e){return e._ax;}).length;
+
+  // 추천: 아직 신청 가능한 행사 중 신청 마감이 가까운 순 (자동차·전장 행사 우선), 마감일 없으면 개최일 순
+  var picks = EV.filter(function(e){return e._st.k==='open'||e._st.k==='closing';})
+    .sort(function(a,b){return (b._auto-a._auto) || (a._dl==null?999:a._dl)-(b._dl==null?999:b._dl) || a._ds-b._ds;}).slice(0,5);
+  document.getElementById('picks').innerHTML = picks.length ? picks.map(function(e,i){
+    var when = e.deadline ? '신청 마감 '+fmtShort(e.deadline)+(e._dl!=null?' (D-'+e._dl+')':'') : '개최 '+fmtShort(e.start);
+    return '<li><a href="'+esc(e.url)+'" target="_blank" rel="noopener"><span class="rank">'+(i+1)+'</span><span><div class="t">'+esc(e.title)+'</div><div class="s">'+esc(e.kind)+' · '+when+'</div></span></a></li>';
+  }).join('') : '<li class="empty">신청 가능한 추천 행사가 없습니다.</li>';
+
+  // 필터 옵션
+  function fill(id, vals){ var el=document.getElementById(id); vals.forEach(function(v){ var o=document.createElement('option'); o.value=v; o.textContent=v; el.appendChild(o); }); }
+  var fieldOpts = ['자동차·전장 전체'].concat(AUTO.filter(function(t){return EV.some(function(e){return e.tags.indexOf(t)>=0;});}))
+    .concat(['생성형AI','제조AI','디지털전환','AX전환','AI일반'].filter(function(t){return EV.some(function(e){return e.tags.indexOf(t)>=0;});}));
+  fill('f-field', fieldOpts);
+  var regions = {}; EV.forEach(function(e){ regions[e.region]=(regions[e.region]||0)+1; });
+  fill('f-region', Object.keys(regions).sort(function(a,b){ return a==='기타'?1:b==='기타'?-1:regions[b]-regions[a]; }));
+  var groups = {}; EV.forEach(function(e){ groups[e.group]=1; });
+  fill('f-group', Object.keys(groups).sort());
+  document.getElementById('f-sort').value = state.sort;
+
+  function base(){
+    var q = state.q.trim().toLowerCase();
+    return EV.filter(function(e){
+      if (state.quick==='new' && !e.is_new) return false;
+      if (state.quick==='auto' && !e._auto) return false;
+      if (state.quick==='ax' && !e._ax) return false;
+      if (state.field){ if (state.field==='자동차·전장 전체' ? !e._auto : e.tags.indexOf(state.field)<0) return false; }
+      if (state.region && e.region!==state.region) return false;
+      if (state.group && e.group!==state.group) return false;
+      if (q && e._hay.indexOf(q)<0) return false;
+      return true;
+    });
+  }
+
+  function renderTabs(list){
+    var counts = {'전체':list.length}; KINDS.forEach(function(k){counts[k]=0;});
+    list.forEach(function(e){counts[e.kind]=(counts[e.kind]||0)+1;});
+    document.getElementById('tabs').innerHTML = ['전체'].concat(KINDS).map(function(k){
+      var active = k==='전체' ? state.tabs.length===0 : state.tabs.indexOf(k)>=0;
+      return '<button class="tab" data-tab="'+k+'" aria-pressed="'+active+'">'+k+'<span class="c num">'+counts[k]+'</span></button>';
+    }).join('');
+  }
+
+  function sorter(a,b){
+    if (state.sort==='deadline') return (a.deadline||'9999').localeCompare(b.deadline||'9999') || a.start.localeCompare(b.start);
+    if (state.sort==='new') return (b.is_new-a.is_new) || a.start.localeCompare(b.start);
+    return a.start.localeCompare(b.start) || a.title.localeCompare(b.title);
+  }
+
+  function row(e){
+    var tags = e.tags.map(function(t){return '<span class="tag'+(AUTO.indexOf(t)>=0?' auto':'')+'">'+esc(t)+'</span>';}).join('');
+    var dday = e._st.k==='ing' ? '' : (e._ds>0 ? '<span class="pill p-info num">D-'+e._ds+'</span>' : (e._ds===0?'<span class="pill p-info">D-DAY</span>':''));
+    var dlTxt = e.deadline ? '<small class="num">신청 ~'+fmtShort(e.deadline)+'</small>' : '';
+    var range = e.end && e.end!==e.start ? fmt(e.start)+' ~ '+fmtShort(e.end) : fmt(e.start);
+    var meta = [];
+    if (e.host) meta.push('<span>주최 <b>'+esc(e.host)+'</b></span>');
+    if (e.fee) meta.push('<span>참가비 <b>'+esc(e.fee)+'</b></span>');
+    meta.push('<span>출처 '+esc(e.sources.join(', '))+'</span>');
+    meta.push('<span class="tags">'+tags+'</span>');
+    return '<div class="row'+(e._closing?' soon':'')+'">'
+      +'<div class="c-t"><div class="title-line"><span class="chip">'+esc(e.kind)+'</span><a href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(e.title)+(e.is_new?' <span class="new">NEW</span>':'')+'</a></div>'
+      +'<div class="meta">'+meta.join('')+'</div></div>'
+      +'<div class="c-s status"><span class="pill '+e._st.c+'">'+e._st.t+'</span>'+dday+'</div>'
+      +'<div class="c-r region">'+esc(e.region)+(e.online&&e.online!=='오프라인'&&e.region!==e.online?'<small style="display:block;color:var(--muted);font-size:11.5px">'+esc(e.online)+'</small>':'')+'</div>'
+      +'<div class="c-w when num">'+range+dlTxt+'</div>'
+      +'</div>';
+  }
+
+  function render(){
+    var list = base();
+    renderTabs(list);
+    if (state.tabs.length) list = list.filter(function(e){return state.tabs.indexOf(e.kind)>=0;});
+    list.sort(sorter);
+    document.getElementById('rows').innerHTML = list.length ? list.map(row).join('')
+      : '<div class="empty-state">조건에 맞는 행사가 없습니다. 검색어나 필터를 바꿔 보세요.</div>';
+    document.querySelectorAll('.stat').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.quick===state.quick)); });
+  }
+
+  document.getElementById('tabs').addEventListener('click', function(ev){
+    var b=ev.target.closest('.tab'); if(!b) return;
+    var k = b.dataset.tab;
+    if (k==='전체') { state.tabs = []; }
+    else { var i = state.tabs.indexOf(k); if (i>=0) state.tabs.splice(i,1); else state.tabs.push(k); }
+    render();
+  });
+  document.querySelectorAll('.stat').forEach(function(b){ b.addEventListener('click', function(){ state.quick = (state.quick===b.dataset.quick && b.dataset.quick!=='all') ? 'all' : b.dataset.quick; render(); }); });
+  document.getElementById('q').addEventListener('input', function(ev){ state.q=ev.target.value; render(); });
+  [['f-field','field'],['f-region','region'],['f-group','group']].forEach(function(p){
+    document.getElementById(p[0]).addEventListener('change', function(ev){ state[p[1]]=ev.target.value; render(); });
+  });
+  document.getElementById('f-sort').addEventListener('change', function(ev){ state.sort=ev.target.value; try{localStorage.setItem('evr-state',JSON.stringify({sort:state.sort}));}catch(_){} render(); });
+
+  // 하단: 수집처 현황
+  var src = Object.keys(D.sources).map(function(k){ return '<div>'+esc(k)+' — '+esc(D.sources[k])+'</div>'; }).join('');
+  document.getElementById('foot').innerHTML = '<span>수집 범위: 오늘부터 '+D.window_days+'일</span>'
+    +'<details><summary>수집처 '+Object.keys(D.sources).length+'곳 현황</summary><div class="srcs">'+src+'</div></details>';
+
+  render();
+})();
+</script>
