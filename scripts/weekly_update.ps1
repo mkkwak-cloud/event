@@ -17,7 +17,7 @@ python build_dashboard.py *>> $log
 
 $prompt = Get-Content (Join-Path $root 'notion_sync_prompt.md') -Raw -Encoding utf8
 $prompt = $prompt.Replace('{{DASHBOARD_URL}}', (Get-Content (Join-Path $proj 'out\dashboard_url.txt') -Raw).Trim())
-$tools = 'Read,ToolSearch,mcp__claude_ai_Notion__notion-query-data-sources,mcp__claude_ai_Notion__notion-create-pages,mcp__claude_ai_Notion__notion-update-page,mcp__claude_ai_Notion__notion-move-pages,mcp__claude_ai_Notion__notion-fetch,mcp__claude_ai_Notion__notion-update-data-source'
+$tools = 'Read,ToolSearch,mcp__claude_ai_Notion__notion-query-data-sources,mcp__claude_ai_Notion__notion-create-pages,mcp__claude_ai_Notion__notion-update-page,mcp__claude_ai_Notion__notion-move-pages,mcp__claude_ai_Notion__notion-fetch,mcp__claude_ai_Notion__notion-update-data-source,mcp__notion__notion-query-data-sources,mcp__notion__notion-create-pages,mcp__notion__notion-update-page,mcp__notion__notion-move-pages,mcp__notion__notion-fetch,mcp__notion__notion-update-data-source'
 "[$(Get-Date)] 게시·Notion 동기화" | Out-File $log -Append -Encoding utf8
 claude -p $prompt --allowedTools $tools *>> $log
 "[$(Get-Date)] 완료" | Out-File $log -Append -Encoding utf8
