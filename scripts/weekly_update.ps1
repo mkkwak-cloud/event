@@ -1,4 +1,4 @@
-# 매주 월요일 07:00 작업 스케줄러가 실행: 수집 -> 대시보드 빌드 -> 게시·Notion 동기화
+﻿# 매주 월요일 07:00 작업 스케줄러가 실행: 수집 -> 대시보드 빌드 -> 게시·Notion 동기화
 $ErrorActionPreference = 'Continue'
 $proj = 'E:\12. 일반Project\event'
 $root = Join-Path $proj 'scripts'

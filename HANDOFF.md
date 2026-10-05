@@ -21,3 +21,5 @@
 - 월요일 자동 실행은 안 돈 것으로 보임(weekly_*.log 없음). 이날 수동으로 수집(173건, 신규 3) → 대시보드 → Notion → 아티팩트(Version 20) 완료. 기록: out/logs/weekly_20261005_manual.log
 - Notion: 신규 2건 추가(디지털데일리 1건은 주소 중복이라 제외), 신규→기존 11건 전환. 종료 41행 정리는 보류(이전에 권한 거부된 작업이라 확인 후 진행).
 - 맨 위 index.html 복사 완료. GitHub 커밋·올리기는 "cmt" 대기.
+- (10/5 추가) 월요일 자동 실행이 안 된 진짜 원인: weekly_update.ps1 이 BOM 없는 UTF-8이라 PowerShell 5.1이 한글을 못 읽고 22행에서 문법 오류로 즉시 종료(작업 결과 1). BOM을 붙여 해결(문법 오류 0). 작업 스케줄러는 이미 "꺼져 있다 켜지면 바로 실행"(StartWhenAvailable) 설정이라 따로 바꿀 것 없음. 다음 자동 실행 10/12 07:00.
+- 종료된 Notion 41행 정리(notion-move-pages)는 자동 권한 판정이 두 번 막음. notion_sync_prompt.md 에 "묻지 말고 바로 실행" 문구와 weekly_update.ps1 의 허용 도구 이름(mcp__notion__ 표기 추가) 수정도 막혀 보류.
