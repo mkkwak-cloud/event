@@ -1,41 +1,42 @@
 {
- "updated": "2026-10-03 16:50",
+ "updated": "2026-10-05 10:50",
  "window_days": 122,
  "sources": {
-  "이벤터스": "202건",
-  "온오프믹스": "204건",
-  "코엑스": "12건 (본문 불일치 제외 0) · 무료 직접 읽기",
-  "킨텍스": "11건 (지난 수집분)",
-  "한국인공지능협회": "1건 (지난 수집분)",
-  "KOSA 행사": "7건 (지난 수집분)",
-  "아이뉴스24": "2건 (지난 수집분)",
-  "대한상공회의소": "15건 (지난 수집분)",
-  "테크M": "1건 (지난 수집분)",
-  "한국자동차공학한림원": "1건 (지난 수집분)",
-  "한국인공지능학회": "1건 (지난 수집분)",
-  "KSAE 연간일정": "7건 (지난 수집분)",
-  "수원컨벤션센터": "10건 (지난 수집분)",
-  "KSAE": "2건 (지난 수집분)",
-  "엑스코": "11건 (지난 수집분)",
-  "KAMA": "2건 (지난 수집분)",
+  "이벤터스": "204건",
+  "온오프믹스": "203건",
+  "NIPA": "3건 (지난 수집분)",
   "NIA": "4건 (지난 수집분)",
-  "KOSA 교육": "9건 (지난 수집분)",
-  "벡스코": "14건 (지난 수집분)",
-  "한국경제인협회": "1건 (지난 수집분)",
+  "IITP": "1건 (지난 수집분)",
   "KIAT": "5건 (지난 수집분)",
   "KEIT": "2건 (지난 수집분)",
-  "한국자동차모빌리티안전학회": "2건 (지난 수집분)",
-  "전자신문": "10건 (지난 수집분)",
-  "KATECH 교육": "5건 (지난 수집분)",
-  "KIoT": "10건 (지난 수집분)",
-  "한국정보과학회": "4건 (지난 수집분)",
-  "파이낸셜뉴스": "9건 (지난 수집분)",
-  "NIPA": "3건 (지난 수집분)",
-  "디지털데일리": "1건 (지난 수집분)",
-  "IITP": "1건 (지난 수집분)",
   "스마트제조혁신추진단": "10건 (지난 수집분)",
-  "KATECH": "2건 (지난 수집분)",
-  "대한기계학회": "26건 (지난 수집분)"
+  "코엑스": "12건 (본문 불일치 제외 0) · 무료 직접 읽기",
+  "킨텍스": "11건 (지난 수집분)",
+  "벡스코": "14건 (본문 불일치 제외 0)",
+  "엑스코": "12건 (본문 불일치 제외 0)",
+  "수원컨벤션센터": "10건 (본문 불일치 제외 0)",
+  "KATECH 교육": "5건 (지난 수집분)",
+  "KATECH": "3건 (본문 불일치 제외 0)",
+  "KAMA": "1건 (본문 불일치 제외 0)",
+  "KSAE": "2건 (본문 불일치 제외 0)",
+  "KSAE 연간일정": "7건 (본문 불일치 제외 0) · 무료 직접 읽기",
+  "대한기계학회": "26건 (본문 불일치 제외 0) · 무료 직접 읽기",
+  "한국자동차공학한림원": "1건 (본문 불일치 제외 0)",
+  "한국자동차모빌리티안전학회": "2건 (지난 수집분)",
+  "한국정보과학회": "5건 (본문 불일치 제외 0)",
+  "한국인공지능학회": "1건 (지난 수집분)",
+  "KOSA 행사": "7건 (지난 수집분)",
+  "KOSA 교육": "9건 (지난 수집분)",
+  "한국인공지능협회": "1건 (지난 수집분)",
+  "KIoT": "10건 (본문 불일치 제외 0) · 무료 직접 읽기",
+  "대한상공회의소": "15건 (본문 불일치 제외 0) · 무료 직접 읽기",
+  "한국경제인협회": "1건 (본문 불일치 제외 2)",
+  "FKI 세미나": "0건 (본문 불일치 제외 0)",
+  "전자신문": "10건 (본문 불일치 제외 0) · 무료 직접 읽기",
+  "파이낸셜뉴스": "9건 (지난 수집분)",
+  "디지털데일리": "1건 (본문 불일치 제외 1)",
+  "아이뉴스24": "2건 (본문 불일치 제외 0)",
+  "테크M": "2건 (본문 불일치 제외 2)"
  },
  "source_groups": [
   "AI·SW협회",
@@ -49,53 +50,6 @@
  ],
  "events": [
   {
-   "id": "c910aac1abe4",
-   "title": "국회 모빌리티포럼 제2차 세미나 - 국내 전기차산업 경쟁력 강화방안",
-   "kind": "컨퍼런스·포럼",
-   "tags": [
-    "SDV",
-    "전기차"
-   ],
-   "start": "2026-10-03",
-   "end": "2026-10-03",
-   "deadline": null,
-   "place": "",
-   "online": "하이브리드",
-   "host": "KAMA",
-   "fee": "",
-   "url": "https://www.kama.or.kr/MainController#",
-   "group": "자동차기관",
-   "sources": [
-    "KAMA"
-   ],
-   "first_seen": "2026-10-03",
-   "is_new": true,
-   "notion_kind": "컨퍼런스"
-  },
-  {
-   "id": "2d2c87a1fe74",
-   "title": "[Dataiku 금융권 오찬세미나] 모델 경쟁을 넘어 성과의 시대로, 금융권 Enterprise AI 전략",
-   "kind": "세미나",
-   "tags": [
-    "AI일반"
-   ],
-   "start": "2026-10-04",
-   "end": "2026-10-04",
-   "deadline": null,
-   "place": "",
-   "online": "하이브리드",
-   "host": "디지털데일리",
-   "fee": "",
-   "url": "https://www.ddaily.co.kr/seminar/view?idx=381",
-   "group": "언론사",
-   "sources": [
-    "디지털데일리"
-   ],
-   "first_seen": "2026-10-03",
-   "is_new": true,
-   "notion_kind": "세미나"
-  },
-  {
    "id": "dda8db4c82ea",
    "title": "2026 청년 AI 세미나 : AI 시대 청년들의 생존법",
    "kind": "세미나",
@@ -105,7 +59,7 @@
    "start": "2026-10-05",
    "end": "2026-10-06",
    "deadline": "2026-10-06",
-   "place": "서울 마포구 잔다리로 65",
+   "place": "서울 마포구 독막로 18",
    "online": "오프라인",
    "host": "DDC",
    "fee": "10,000원~",
@@ -115,6 +69,29 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
+   "is_new": false,
+   "notion_kind": "세미나"
+  },
+  {
+   "id": "b051c9fb865c",
+   "title": "[KSAE] 2026 융합S/W 및 AI부문 기술 세미나 개최 안내",
+   "kind": "세미나",
+   "tags": [
+    "AI일반"
+   ],
+   "start": "2026-10-05",
+   "end": "2026-10-05",
+   "deadline": null,
+   "place": "",
+   "online": "온라인",
+   "host": "KSAE",
+   "fee": "",
+   "url": "https://www.ksae.org/func/banner_hit.php?number=326",
+   "group": "자동차기관",
+   "sources": [
+    "KSAE"
+   ],
+   "first_seen": "2026-10-05",
    "is_new": true,
    "notion_kind": "세미나"
   },
@@ -188,8 +165,8 @@
    "notion_kind": "교육"
   },
   {
-   "id": "dd1efc483a89",
-   "title": "디지털AI포럼",
+   "id": "848f0beb309a",
+   "title": "부산광역시공예협동조합 디지털AI포럼",
    "kind": "컨퍼런스·포럼",
    "tags": [
     "AI일반"
@@ -198,7 +175,7 @@
    "end": "2026-10-06",
    "deadline": null,
    "place": "제1회의실 213호",
-   "online": "오프라인",
+   "online": "",
    "host": "벡스코",
    "fee": "",
    "url": "https://www.bexco.co.kr/kor/CMS/EventScheduleMgr/view.do?mCode=MN214&&event_seq=16718",
@@ -207,7 +184,7 @@
     "벡스코"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -365,7 +342,7 @@
    "end": "2026-10-07",
    "deadline": null,
    "place": "제1회의실 313호",
-   "online": "오프라인",
+   "online": "",
    "host": "벡스코",
    "fee": "",
    "url": "https://www.bexco.co.kr/kor/CMS/EventScheduleMgr/view.do?mCode=MN214&&event_seq=16722",
@@ -374,7 +351,7 @@
     "벡스코"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -420,7 +397,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -503,7 +480,7 @@
    ],
    "start": "2026-10-07",
    "end": "2026-10-08",
-   "deadline": null,
+   "deadline": "2026-09-17",
    "place": "윈덤 그랜드 부산",
    "online": "오프라인",
    "host": "한국정보과학회",
@@ -608,7 +585,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -655,7 +632,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -702,7 +679,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -748,7 +725,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -986,7 +963,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1009,7 +986,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -1033,7 +1010,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -1079,7 +1056,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1195,7 +1172,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -1218,7 +1195,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -1265,7 +1242,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -1288,7 +1265,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1311,7 +1288,7 @@
     "코엑스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "전시회"
   },
   {
@@ -1334,7 +1311,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -1358,7 +1335,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -1382,7 +1359,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1452,7 +1429,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1476,7 +1453,7 @@
     "KOSA 행사"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1500,7 +1477,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -1592,7 +1569,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -1617,6 +1594,29 @@
    "first_seen": "2026-09-24",
    "is_new": false,
    "notion_kind": "교육"
+  },
+  {
+   "id": "6756ccec5d7a",
+   "title": "[Dataiku 금융권 오찬세미나] 모델 경쟁을 넘어 성과의 시대로, 금융권 Enterprise AI 전략",
+   "kind": "컨퍼런스·포럼",
+   "tags": [
+    "AI일반"
+   ],
+   "start": "2026-10-19",
+   "end": "2026-10-19",
+   "deadline": null,
+   "place": "",
+   "online": "오프라인",
+   "host": "디지털데일리",
+   "fee": "",
+   "url": "https://www.ddaily.co.kr/seminar/view?idx=381",
+   "group": "언론사",
+   "sources": [
+    "디지털데일리"
+   ],
+   "first_seen": "2026-10-05",
+   "is_new": true,
+   "notion_kind": "컨퍼런스"
   },
   {
    "id": "5b6267d6d9b8",
@@ -1662,7 +1662,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1805,7 +1805,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1830,7 +1830,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1892,7 +1892,7 @@
    "end": "2026-10-24",
    "deadline": null,
    "place": "서관 1홀, 2홀",
-   "online": "오프라인",
+   "online": "",
    "host": "엑스코",
    "fee": "",
    "url": "https://www.exco.co.kr/schedule/schedule_view.html?code=P_OVFZ34398&ex_cate=1",
@@ -1915,7 +1915,7 @@
    "end": "2026-10-24",
    "deadline": null,
    "place": "동관 4홀, 5홀, 6홀",
-   "online": "오프라인",
+   "online": "",
    "host": "엑스코",
    "fee": "",
    "url": "https://www.exco.co.kr/schedule/schedule_view.html?code=P_PVTP06881&ex_cate=1",
@@ -2044,7 +2044,7 @@
     "킨텍스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "전시회"
   },
   {
@@ -2091,7 +2091,7 @@
     "전자신문"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2209,7 +2209,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2232,7 +2232,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2256,7 +2256,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -2270,7 +2270,7 @@
    "end": "2026-10-24",
    "deadline": null,
    "place": "서관 3홀",
-   "online": "오프라인",
+   "online": "",
    "host": "엑스코",
    "fee": "",
    "url": "https://www.exco.co.kr/schedule/schedule_view.html?code=P_MAMG07991&ex_cate=1",
@@ -2354,7 +2354,7 @@
   {
    "id": "ddd1932cb3ab",
    "title": "NVRAMOS 2026",
-   "kind": "컨퍼런스·포럼",
+   "kind": "세미나",
    "tags": [
     "AI일반"
    ],
@@ -2372,7 +2372,7 @@
    ],
    "first_seen": "2026-09-27",
    "is_new": false,
-   "notion_kind": "컨퍼런스"
+   "notion_kind": "세미나"
   },
   {
    "id": "c9afdb62fcb6",
@@ -2394,7 +2394,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -2417,7 +2417,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2629,7 +2629,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2652,7 +2652,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2700,6 +2700,29 @@
    "first_seen": "2026-09-24",
    "is_new": false,
    "notion_kind": "교육"
+  },
+  {
+   "id": "6780c2eae759",
+   "title": "AI 놀이터 2026 가을 밋업-DEMO DAY",
+   "kind": "세미나",
+   "tags": [
+    "AI일반"
+   ],
+   "start": "2026-10-25",
+   "end": "2026-10-25",
+   "deadline": "2026-10-20",
+   "place": "서울 종로구 종로1길 50",
+   "online": "오프라인",
+   "host": "AI 놀이터",
+   "fee": "무료",
+   "url": "https://event-us.kr/ainolite/event/136717",
+   "group": "행사플랫폼",
+   "sources": [
+    "이벤터스"
+   ],
+   "first_seen": "2026-10-05",
+   "is_new": true,
+   "notion_kind": "세미나"
   },
   {
    "id": "40322cb8eb2f",
@@ -2792,7 +2815,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -2816,7 +2839,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2885,7 +2908,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3026,7 +3049,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3049,7 +3072,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3143,7 +3166,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3236,7 +3259,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -3306,7 +3329,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3377,7 +3400,7 @@
     "KOSA 교육"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -3402,7 +3425,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -3425,7 +3448,7 @@
     "KOSA 교육"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -3449,7 +3472,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3518,7 +3541,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -3589,7 +3612,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3636,7 +3659,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3660,7 +3683,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3706,7 +3729,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -3799,7 +3822,7 @@
     "한국인공지능학회"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -3822,7 +3845,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -3871,7 +3894,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3895,7 +3918,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -4081,7 +4104,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-03",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "전시회"
   }
  ]
