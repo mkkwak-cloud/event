@@ -187,7 +187,8 @@ h1{margin:10px 0 12px;font-size:clamp(21px,2.6vw,28px);line-height:1.3;font-weig
 <script>
 (function(){
   var D = JSON.parse(document.getElementById('data').textContent);
-  var EV = D.events;
+  var _t0 = new Date(); _t0.setHours(0,0,0,0); var _ts = _t0.getFullYear()+'-'+String(_t0.getMonth()+1).padStart(2,'0')+'-'+String(_t0.getDate()).padStart(2,'0');
+  var EV = D.events.filter(function(e){ return (e.end||e.start) >= _ts; }); // 지난 행사는 보는 날 기준으로 숨김
   var KINDS = ['전시회','학술대회','컨퍼런스·포럼','세미나','교육','웨비나'];
   var AUTO = ['자율주행','SDV','전기차','배터리','수소차','E/E아키텍처','ECU','AUTOSAR','차량용반도체','ASPICE','ISO26262','SOTIF','ISO21434','CMMI'];
   var today = new Date(); today.setHours(0,0,0,0);
