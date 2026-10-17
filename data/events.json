@@ -1,42 +1,41 @@
 {
- "updated": "2026-10-16 12:49",
+ "updated": "2026-10-17 18:53",
  "window_days": 122,
  "sources": {
-  "이벤터스": "237건",
-  "온오프믹스": "204건",
-  "코엑스": "10건 (본문 불일치 제외 2) · 무료 직접 읽기",
+  "이벤터스": "244건",
+  "온오프믹스": "205건",
+  "엑스코": "638건 (본문 불일치 제외 0) · 무료 직접 읽기",
+  "대한기계학회": "26건 (지난 수집분)",
+  "KOSA 교육": "9건 (지난 수집분)",
+  "벡스코": "5건 (지난 수집분)",
+  "KSAE 연간일정": "7건 (지난 수집분)",
+  "KOSA 행사": "10건 (지난 수집분)",
   "킨텍스": "11건 (지난 수집분)",
-  "벡스코": "5건 (본문 불일치 제외 0)",
-  "엑스코": "0건 (본문 불일치 제외 0)",
-  "수원컨벤션센터": "12건 (본문 불일치 제외 0)",
-  "KATECH 교육": "3건 (본문 불일치 제외 0)",
-  "KATECH": "4건 (본문 불일치 제외 0)",
-  "KAMA": "2건 (본문 불일치 제외 0)",
-  "KSAE": "3건 (본문 불일치 제외 0)",
-  "KSAE 연간일정": "7건 (본문 불일치 제외 0) · 무료 직접 읽기",
-  "대한기계학회": "26건 (본문 불일치 제외 0) · 무료 직접 읽기",
-  "한국자동차공학한림원": "1건 (본문 불일치 제외 0)",
-  "한국자동차모빌리티안전학회": "2건 (본문 불일치 제외 0)",
-  "한국정보과학회": "6건 (본문 불일치 제외 0)",
-  "한국인공지능학회": "1건 (본문 불일치 제외 0)",
-  "KOSA 행사": "10건 (본문 불일치 제외 0)",
-  "KOSA 교육": "9건 (본문 불일치 제외 0)",
-  "한국인공지능협회": "5건 (본문 불일치 제외 0)",
-  "KIoT": "10건 (본문 불일치 제외 0) · 무료 직접 읽기",
-  "대한상공회의소": "15건 (본문 불일치 제외 0) · 무료 직접 읽기",
-  "한국경제인협회": "3건 (본문 불일치 제외 2)",
-  "FKI 세미나": "실패: HTTP Error 500: Internal Server Error",
-  "전자신문": "17건 (본문 불일치 제외 0) · 무료 직접 읽기",
-  "파이낸셜뉴스": "2건 (본문 불일치 제외 0)",
-  "디지털데일리": "9건 (본문 불일치 제외 1)",
-  "아이뉴스24": "3건 (본문 불일치 제외 3)",
-  "테크M": "5건 (본문 불일치 제외 1)",
-  "NIPA": "4건 (본문 불일치 제외 0)",
-  "NIA": "4건 (본문 불일치 제외 0)",
-  "IITP": "4건 (본문 불일치 제외 0)",
-  "KIAT": "5건 (본문 불일치 제외 0)",
-  "KEIT": "7건 (본문 불일치 제외 0)",
-  "스마트제조혁신추진단": "7건 (본문 불일치 제외 0)"
+  "아이뉴스24": "3건 (지난 수집분)",
+  "NIPA": "4건 (지난 수집분)",
+  "한국자동차모빌리티안전학회": "2건 (지난 수집분)",
+  "대한상공회의소": "15건 (지난 수집분)",
+  "IITP": "4건 (지난 수집분)",
+  "한국인공지능협회": "5건 (지난 수집분)",
+  "한국경제인협회": "3건 (지난 수집분)",
+  "NIA": "4건 (지난 수집분)",
+  "한국정보과학회": "6건 (지난 수집분)",
+  "스마트제조혁신추진단": "7건 (지난 수집분)",
+  "파이낸셜뉴스": "2건 (지난 수집분)",
+  "테크M": "5건 (지난 수집분)",
+  "코엑스": "10건 (지난 수집분)",
+  "디지털데일리": "9건 (지난 수집분)",
+  "수원컨벤션센터": "12건 (지난 수집분)",
+  "KIoT": "10건 (지난 수집분)",
+  "KATECH 교육": "3건 (지난 수집분)",
+  "한국인공지능학회": "1건 (지난 수집분)",
+  "KSAE": "3건 (지난 수집분)",
+  "KAMA": "2건 (지난 수집분)",
+  "전자신문": "17건 (지난 수집분)",
+  "KATECH": "4건 (지난 수집분)",
+  "한국자동차공학한림원": "1건 (지난 수집분)",
+  "KEIT": "7건 (지난 수집분)",
+  "KIAT": "5건 (지난 수집분)"
  },
  "source_groups": [
   "AI·SW협회",
@@ -49,215 +48,6 @@
   "행사플랫폼"
  ],
  "events": [
-  {
-   "id": "c1c46261b93b",
-   "title": "KES 2026(한국전자전)",
-   "kind": "전시회",
-   "tags": [
-    "차량용반도체",
-    "디지털전환"
-   ],
-   "start": "2026-10-13",
-   "end": "2026-10-16",
-   "deadline": null,
-   "place": "코엑스 Hall A, B",
-   "online": "",
-   "host": "코엑스",
-   "fee": "",
-   "url": "https://www.coex.co.kr/exhibitions/kes-2026%ed%95%9c%ea%b5%ad%ec%a0%84%ec%9e%90%ec%a0%84/",
-   "group": "전시장",
-   "sources": [
-    "코엑스"
-   ],
-   "first_seen": "2026-09-24",
-   "is_new": false,
-   "notion_kind": "전시회"
-  },
-  {
-   "id": "545611dec253",
-   "title": "제 28회 반도체대전",
-   "kind": "전시회",
-   "tags": [
-    "차량용반도체"
-   ],
-   "start": "2026-10-14",
-   "end": "2026-10-16",
-   "deadline": null,
-   "place": "코엑스 Hall C, D",
-   "online": "",
-   "host": "코엑스",
-   "fee": "",
-   "url": "https://www.coex.co.kr/exhibitions/%ec%a0%9c-28%ed%9a%8c-%eb%b0%98%eb%8f%84%ec%b2%b4%eb%8c%80%ec%a0%84/",
-   "group": "전시장",
-   "sources": [
-    "코엑스"
-   ],
-   "first_seen": "2026-10-03",
-   "is_new": false,
-   "notion_kind": "전시회"
-  },
-  {
-   "id": "b958ac05a65c",
-   "title": "AI ERP 시대, Odoo 20이 제시하는 새로운 파트너 비즈니스 생태계",
-   "kind": "세미나",
-   "tags": [
-    "AI일반"
-   ],
-   "start": "2026-10-16",
-   "end": "2026-10-16",
-   "deadline": null,
-   "place": "장소없음/미정",
-   "online": "오프라인",
-   "host": "",
-   "fee": "무료",
-   "url": "https://onoffmix.com/event/350439",
-   "group": "행사플랫폼",
-   "sources": [
-    "온오프믹스"
-   ],
-   "first_seen": "2026-10-03",
-   "is_new": false,
-   "notion_kind": "세미나"
-  },
-  {
-   "id": "59dd15380a61",
-   "title": "K-CRASH 2026 개최 및 등록 안내",
-   "kind": "교육",
-   "tags": [
-    "SDV"
-   ],
-   "start": "2026-10-16",
-   "end": "2026-10-16",
-   "deadline": "2026-10-16",
-   "place": "",
-   "online": "온라인",
-   "host": "(사)한국자동차모빌리티안전학회",
-   "fee": "",
-   "url": "https://www.kasa.kr/boards/notice/41858/detail/board/notice/",
-   "group": "학회",
-   "sources": [
-    "한국자동차모빌리티안전학회"
-   ],
-   "first_seen": "2026-10-16",
-   "is_new": true,
-   "notion_kind": "교육"
-  },
-  {
-   "id": "ff177887c4d1",
-   "title": "UX 기획·DESIGN.md 설계·AI 구현 전 과정 1-day 워크숍 with Claude Code·Codex",
-   "kind": "컨퍼런스·포럼",
-   "tags": [
-    "AI일반"
-   ],
-   "start": "2026-10-16",
-   "end": "2026-10-16",
-   "deadline": null,
-   "place": "",
-   "online": "",
-   "host": "전자신문",
-   "fee": "",
-   "url": "https://conference.etnews.com/conf_info.html?uid=512",
-   "group": "언론사",
-   "sources": [
-    "전자신문"
-   ],
-   "first_seen": "2026-09-24",
-   "is_new": false,
-   "notion_kind": "컨퍼런스"
-  },
-  {
-   "id": "9ebbcb75510a",
-   "title": "[부산대 AI 콜로퀴엄 2026] 26.10.16(금), 유환조 교수(포항공과대학교), 인",
-   "kind": "세미나",
-   "tags": [
-    "생성형AI",
-    "AI일반"
-   ],
-   "start": "2026-10-16",
-   "end": "2026-10-16",
-   "deadline": null,
-   "place": "부산광역시 금정구",
-   "online": "오프라인",
-   "host": "",
-   "fee": "무료",
-   "url": "https://onoffmix.com/event/351008",
-   "group": "행사플랫폼",
-   "sources": [
-    "온오프믹스"
-   ],
-   "first_seen": "2026-10-16",
-   "is_new": true,
-   "notion_kind": "세미나"
-  },
-  {
-   "id": "a52fa5dda166",
-   "title": "국산 NPU 133억 사업 재조정...'공무원용 AI' 내년 가동 가능성↑",
-   "kind": "웨비나",
-   "tags": [
-    "AI일반"
-   ],
-   "start": "2026-10-16",
-   "end": "2026-10-16",
-   "deadline": null,
-   "place": "",
-   "online": "온라인",
-   "host": "테크M",
-   "fee": "",
-   "url": "https://www.techm.kr/news/articleView.html?idxno=156170",
-   "group": "언론사",
-   "sources": [
-    "테크M"
-   ],
-   "first_seen": "2026-10-16",
-   "is_new": true,
-   "notion_kind": "웨비나"
-  },
-  {
-   "id": "9a1f5d7ab392",
-   "title": "삼성이 점찍은 미스트랄AI, 이번엔 물리학 AI 만든다...CERN과 공동개발",
-   "kind": "컨퍼런스·포럼",
-   "tags": [
-    "AI일반"
-   ],
-   "start": "2026-10-16",
-   "end": "2026-10-16",
-   "deadline": null,
-   "place": "",
-   "online": "온라인",
-   "host": "테크M",
-   "fee": "",
-   "url": "https://www.techm.kr/news/articleView.html?idxno=156175",
-   "group": "언론사",
-   "sources": [
-    "테크M"
-   ],
-   "first_seen": "2026-10-16",
-   "is_new": true,
-   "notion_kind": "컨퍼런스"
-  },
-  {
-   "id": "0bfd3e716010",
-   "title": "AI와 함께 읽는 성경: 평신도를 위한 성경 해석 워크숍",
-   "kind": "교육",
-   "tags": [
-    "AI일반"
-   ],
-   "start": "2026-10-17",
-   "end": "2026-10-17",
-   "deadline": "2026-10-17",
-   "place": "서울 용산구 청파로 304",
-   "online": "오프라인",
-   "host": "미셔널신학연구소",
-   "fee": "무료",
-   "url": "https://event-us.kr/imtseoul/event/136405",
-   "group": "행사플랫폼",
-   "sources": [
-    "이벤터스"
-   ],
-   "first_seen": "2026-10-03",
-   "is_new": false,
-   "notion_kind": "교육"
-  },
   {
    "id": "71325d88882d",
    "title": "AI 기반 디지털 지식경영 혁신 미국 연수",
@@ -301,7 +91,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -324,7 +114,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -347,7 +137,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -370,7 +160,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -463,7 +253,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -486,7 +276,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -509,7 +299,7 @@
     "KSAE"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -582,7 +372,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -628,7 +418,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -700,7 +490,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -724,7 +514,7 @@
     "코엑스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -770,8 +560,54 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
+  },
+  {
+   "id": "bd6b5a1f5d6b",
+   "title": "2026 대한민국 ICT 융합 엑스포",
+   "kind": "전시회",
+   "tags": [
+    "디지털전환"
+   ],
+   "start": "2026-10-21",
+   "end": "2026-10-24",
+   "deadline": null,
+   "place": "엑스코",
+   "online": "",
+   "host": "엑스코",
+   "fee": "",
+   "url": "https://www.exco.co.kr/schedule/schedule_list.html",
+   "group": "전시장",
+   "sources": [
+    "엑스코"
+   ],
+   "first_seen": "2026-09-24",
+   "is_new": false,
+   "notion_kind": "전시회"
+  },
+  {
+   "id": "c76ed15c7fcd",
+   "title": "2026 대한민국 미래모빌리티엑스포",
+   "kind": "전시회",
+   "tags": [
+    "SDV"
+   ],
+   "start": "2026-10-21",
+   "end": "2026-10-24",
+   "deadline": null,
+   "place": "엑스코",
+   "online": "",
+   "host": "산업통상자원부, 국토교통부, 대구광역시, 한국자동차공학한림원, 한국자동차공학회",
+   "fee": "",
+   "url": "https://www.exco.co.kr/schedule/schedule_list.html",
+   "group": "전시장",
+   "sources": [
+    "엑스코"
+   ],
+   "first_seen": "2026-09-24",
+   "is_new": false,
+   "notion_kind": "전시회"
   },
   {
    "id": "69151b265fed",
@@ -894,6 +730,29 @@
    "notion_kind": "전시회"
   },
   {
+   "id": "99f0e5ce72ff",
+   "title": "AI와 바이오헬스, 초고령사회에서 새로운 기회를 찾다 - 기술을 넘어 브랜드로! 글로벌 시장에서 선택받는 제품",
+   "kind": "세미나",
+   "tags": [
+    "AI일반"
+   ],
+   "start": "2026-10-21",
+   "end": "2026-10-21",
+   "deadline": "2026-10-21",
+   "place": "서울 강남구 영동대로 513",
+   "online": "오프라인",
+   "host": "(사)한국바이오특화센터협의회",
+   "fee": "무료",
+   "url": "https://event-us.kr/kbcluster/event/137802",
+   "group": "행사플랫폼",
+   "sources": [
+    "이벤터스"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "세미나"
+  },
+  {
    "id": "ab912d5e8f45",
    "title": "Cato AI Security: AI 시대를 위한 차세대 보안 소개",
    "kind": "세미나",
@@ -915,6 +774,29 @@
    "first_seen": "2026-10-03",
    "is_new": false,
    "notion_kind": "세미나"
+  },
+  {
+   "id": "d4435d2dfc4c",
+   "title": "FIX 2026(미래혁신기술박람회)",
+   "kind": "전시회",
+   "tags": [
+    "SDV"
+   ],
+   "start": "2026-10-21",
+   "end": "2026-10-24",
+   "deadline": null,
+   "place": "엑스코",
+   "online": "",
+   "host": "대구광역시",
+   "fee": "",
+   "url": "https://www.exco.co.kr/schedule/schedule_list.html",
+   "group": "전시장",
+   "sources": [
+    "엑스코"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "전시회"
   },
   {
    "id": "c2e9c0c7f549",
@@ -1007,7 +889,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -1030,7 +912,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1077,7 +959,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -1123,7 +1005,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -1144,10 +1026,11 @@
    "url": "https://event-us.kr/aismartcityedu/event/137758",
    "group": "행사플랫폼",
    "sources": [
+    "온오프믹스",
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1176,6 +1059,29 @@
    "notion_kind": "웨비나"
   },
   {
+   "id": "7e93f5c4b08b",
+   "title": "제15회 대구국제로봇산업전",
+   "kind": "전시회",
+   "tags": [
+    "제조AI"
+   ],
+   "start": "2026-10-21",
+   "end": "2026-10-24",
+   "deadline": null,
+   "place": "엑스코",
+   "online": "",
+   "host": "대구광역시",
+   "fee": "",
+   "url": "https://www.exco.co.kr/schedule/schedule_list.html",
+   "group": "전시장",
+   "sources": [
+    "엑스코"
+   ],
+   "first_seen": "2026-09-24",
+   "is_new": false,
+   "notion_kind": "전시회"
+  },
+  {
    "id": "9912733bb4d4",
    "title": "캐나다-한국 피지컬AI 이노베이션 포럼 참가 안내 (~10/21)",
    "kind": "컨퍼런스·포럼",
@@ -1196,7 +1102,7 @@
     "한국인공지능협회"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -1220,7 +1126,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1290,7 +1196,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1314,7 +1220,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1384,7 +1290,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1407,7 +1313,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1523,7 +1429,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -1546,7 +1452,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -1569,7 +1475,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -1615,7 +1521,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1638,7 +1544,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -1662,6 +1568,29 @@
    ],
    "first_seen": "2026-09-24",
    "is_new": false,
+   "notion_kind": "세미나"
+  },
+  {
+   "id": "73173fc249ff",
+   "title": "AI기반 전파융합기술 세미나",
+   "kind": "세미나",
+   "tags": [
+    "AI일반"
+   ],
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "deadline": null,
+   "place": "엑스코",
+   "online": "",
+   "host": "(사)한국전자파학회",
+   "fee": "",
+   "url": "https://www.exco.co.kr/schedule/schedule_list.html",
+   "group": "전시장",
+   "sources": [
+    "엑스코"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
    "notion_kind": "세미나"
   },
   {
@@ -1826,7 +1755,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "전시회"
   },
   {
@@ -1872,7 +1801,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -1918,7 +1847,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -1942,7 +1871,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -1965,7 +1894,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -2036,7 +1965,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2087,29 +2016,6 @@
    "notion_kind": "세미나"
   },
   {
-   "id": "21d2c48fcb17",
-   "title": "[중소기업 교육비 30,000원] AI를 활용한 교육과정개발 실무과정",
-   "kind": "교육",
-   "tags": [
-    "AI일반"
-   ],
-   "start": "2026-10-27",
-   "end": "2026-10-27",
-   "deadline": "2026-10-26",
-   "place": "서울 서초구 동작대로 50",
-   "online": "하이브리드",
-   "host": "HR에듀센터_인사드림(insadream)",
-   "fee": "유료",
-   "url": "https://event-us.kr/insadream/event/130885",
-   "group": "행사플랫폼",
-   "sources": [
-    "이벤터스"
-   ],
-   "first_seen": "2026-09-24",
-   "is_new": false,
-   "notion_kind": "교육"
-  },
-  {
    "id": "4613b23fa32d",
    "title": "쿤텍 AI 보안 세미나",
    "kind": "세미나",
@@ -2133,6 +2039,29 @@
    "notion_kind": "세미나"
   },
   {
+   "id": "b48e2f02c602",
+   "title": "(세미나) AI Native 옵저버빌리티로 5분 내에 장애 원인 찾는 3가지 방법",
+   "kind": "세미나",
+   "tags": [
+    "AI일반"
+   ],
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "deadline": "2026-10-28",
+   "place": "온라인",
+   "online": "온라인",
+   "host": "MSAP.ai",
+   "fee": "무료",
+   "url": "https://event-us.kr/msap/event/137769",
+   "group": "행사플랫폼",
+   "sources": [
+    "이벤터스"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "세미나"
+  },
+  {
    "id": "90ea3888b9cc",
    "title": "2026 K-opensource AX",
    "kind": "컨퍼런스·포럼",
@@ -2152,7 +2081,7 @@
     "전자신문"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -2198,7 +2127,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -2271,7 +2200,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2318,7 +2247,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2342,7 +2271,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2388,7 +2317,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -2412,8 +2341,56 @@
     "전자신문"
    ],
    "first_seen": "2026-10-16",
+   "is_new": false,
+   "notion_kind": "컨퍼런스"
+  },
+  {
+   "id": "a8fe6f6e01b2",
+   "title": "피지컬 AI x AI 네트워크 초연결 버티컬 AX연합 토론회",
+   "kind": "컨퍼런스·포럼",
+   "tags": [
+    "제조AI",
+    "AI일반"
+   ],
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "deadline": null,
+   "place": "서울특별시 서초구",
+   "online": "오프라인",
+   "host": "",
+   "fee": "<span class=\"free\">무료",
+   "url": "https://onoffmix.com/event/351388",
+   "group": "행사플랫폼",
+   "sources": [
+    "온오프믹스"
+   ],
+   "first_seen": "2026-10-17",
    "is_new": true,
    "notion_kind": "컨퍼런스"
+  },
+  {
+   "id": "e7960020b66e",
+   "title": "[10.29/AWS 강의] 제조ㆍ엔지니어링 AI 실전 적용과 업무혁신 전략 세미나",
+   "kind": "세미나",
+   "tags": [
+    "AI일반"
+   ],
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "deadline": "2026-10-28",
+   "place": "서울 구로구 디지털로 271",
+   "online": "하이브리드",
+   "host": "산업교육연구소님의 채널",
+   "fee": "유료",
+   "url": "https://event-us.kr/lfow3BsRr5Ez/event/137767",
+   "group": "행사플랫폼",
+   "sources": [
+    "온오프믹스",
+    "이벤터스"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "세미나"
   },
   {
    "id": "1d42c419bea2",
@@ -2483,31 +2460,8 @@
     "전자신문"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
-   "notion_kind": "웨비나"
-  },
-  {
-   "id": "1eb54b53c089",
-   "title": "[중소/중견기업 교육비 15,000원] Gemini 기반 실무 AI 활용 기본교육",
-   "kind": "교육",
-   "tags": [
-    "AI일반"
-   ],
-   "start": "2026-10-29",
-   "end": "2026-10-29",
-   "deadline": "2026-10-28",
-   "place": "서울 서초구 동작대로 50",
-   "online": "하이브리드",
-   "host": "HR에듀센터_인사드림(insadream)",
-   "fee": "유료",
-   "url": "https://event-us.kr/insadream/event/126515",
-   "group": "행사플랫폼",
-   "sources": [
-    "이벤터스"
-   ],
-   "first_seen": "2026-09-24",
    "is_new": false,
-   "notion_kind": "교육"
+   "notion_kind": "웨비나"
   },
   {
    "id": "8d6364af5143",
@@ -2529,7 +2483,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2579,6 +2533,29 @@
    "notion_kind": "컨퍼런스"
   },
   {
+   "id": "de574a84c759",
+   "title": "[10.30] [RPS 폐지ㆍ대전환]2027 재생에너지 시장 환경변화 기회와 대응 세미나",
+   "kind": "세미나",
+   "tags": [
+    "배터리"
+   ],
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "deadline": null,
+   "place": "서울특별시 구로구",
+   "online": "오프라인",
+   "host": "",
+   "fee": "유료",
+   "url": "https://onoffmix.com/event/351528",
+   "group": "행사플랫폼",
+   "sources": [
+    "온오프믹스"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "세미나"
+  },
+  {
    "id": "f04b46407d80",
    "title": "[경북글로벌게임센터] 2026 Gen AI Game JAM (2박 3일) 참가자 모집",
    "kind": "세미나",
@@ -2598,7 +2575,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2692,7 +2669,7 @@
     "KAMA"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "전시회"
   },
   {
@@ -2738,7 +2715,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "전시회"
   },
   {
@@ -2762,7 +2739,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -2785,7 +2762,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2812,6 +2789,29 @@
    "notion_kind": "컨퍼런스"
   },
   {
+   "id": "07572b490db3",
+   "title": "2026 대한민국국제농기계자재박람회",
+   "kind": "전시회",
+   "tags": [
+    "제조AI"
+   ],
+   "start": "2026-11-04",
+   "end": "2026-11-07",
+   "deadline": null,
+   "place": "엑스코",
+   "online": "",
+   "host": "농림축산식품부",
+   "fee": "",
+   "url": "https://www.exco.co.kr/schedule/schedule_list.html",
+   "group": "전시장",
+   "sources": [
+    "엑스코"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "전시회"
+  },
+  {
    "id": "93d81f0017fa",
    "title": "[2026 강남 창업나침반] AI로 완성하는 정부지원사업 사업계획서",
    "kind": "세미나",
@@ -2831,7 +2831,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -2854,7 +2854,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -2878,7 +2878,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -3019,7 +3019,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "전시회"
   },
   {
@@ -3065,8 +3065,31 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
+  },
+  {
+   "id": "978071bc667d",
+   "title": "가비아 AX Consulting Day",
+   "kind": "교육",
+   "tags": [
+    "AX전환"
+   ],
+   "start": "2026-11-05",
+   "end": "2026-11-05",
+   "deadline": "2026-10-29",
+   "place": "서울 삼성역 인근",
+   "online": "오프라인",
+   "host": "Gabia 가비아",
+   "fee": "무료",
+   "url": "https://event-us.kr/gabia/event/137777",
+   "group": "행사플랫폼",
+   "sources": [
+    "이벤터스"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "교육"
   },
   {
    "id": "9330fbe66034",
@@ -3089,7 +3112,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3114,7 +3137,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -3255,7 +3278,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3302,7 +3325,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3325,7 +3348,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3373,8 +3396,31 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
+  },
+  {
+   "id": "92d82abceb4b",
+   "title": "ICT창업트랙:AI를 활용한 창업팀의 일하는 방식",
+   "kind": "웨비나",
+   "tags": [
+    "AI일반"
+   ],
+   "start": "2026-11-10",
+   "end": "2026-11-17",
+   "deadline": "2026-11-02",
+   "place": "서울 관악구 남부순환로 1759",
+   "online": "온라인",
+   "host": "스타트업허브",
+   "fee": "무료",
+   "url": "https://event-us.kr/startuphub/event/137771",
+   "group": "행사플랫폼",
+   "sources": [
+    "이벤터스"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "웨비나"
   },
   {
    "id": "22b56fa7c5ed",
@@ -3397,7 +3443,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3490,7 +3536,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3513,7 +3559,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -3536,7 +3582,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3606,7 +3652,7 @@
     "한국정보과학회"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -3652,7 +3698,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -3675,7 +3721,7 @@
     "KSAE"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -3699,8 +3745,56 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
+  },
+  {
+   "id": "5cb31f8220af",
+   "title": "2026 대구국제기계산업대전",
+   "kind": "전시회",
+   "tags": [
+    "제조AI"
+   ],
+   "start": "2026-11-17",
+   "end": "2026-11-20",
+   "deadline": null,
+   "place": "엑스코",
+   "online": "",
+   "host": "대구광역시,경상북도",
+   "fee": "",
+   "url": "https://www.exco.co.kr/schedule/schedule_list.html",
+   "group": "전시장",
+   "sources": [
+    "엑스코"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "전시회"
+  },
+  {
+   "id": "44d7f0633cb9",
+   "title": "ServiceNow AI 플랫폼의 미래 사람과 AI에이전트, 계정 권한과 자산의 워크플로우 통합 경험",
+   "kind": "웨비나",
+   "tags": [
+    "생성형AI",
+    "AI일반"
+   ],
+   "start": "2026-11-17",
+   "end": "2026-11-17",
+   "deadline": "2026-11-17",
+   "place": "온라인",
+   "online": "온라인",
+   "host": "잇츠맨",
+   "fee": "무료",
+   "url": "https://event-us.kr/itsman/event/137846",
+   "group": "행사플랫폼",
+   "sources": [
+    "온오프믹스",
+    "이벤터스"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "웨비나"
   },
   {
    "id": "3e136c241e87",
@@ -3746,7 +3840,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
   },
   {
@@ -3863,7 +3957,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3886,7 +3980,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -3909,8 +4003,54 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "컨퍼런스"
+  },
+  {
+   "id": "ca6b5cb96adc",
+   "title": "[중소/중견기업 교육비 15,000원] Gemini 기반 실무 AI 활용 기본교육",
+   "kind": "교육",
+   "tags": [
+    "AI일반"
+   ],
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "deadline": "2026-11-19",
+   "place": "서울 서초구 동작대로 50",
+   "online": "하이브리드",
+   "host": "HR에듀센터_인사드림(insadream)",
+   "fee": "유료",
+   "url": "https://event-us.kr/insadream/event/126515",
+   "group": "행사플랫폼",
+   "sources": [
+    "이벤터스"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "교육"
+  },
+  {
+   "id": "d6d53c9e1b57",
+   "title": "2026 서울AI디지털배움터 청년 AI 해커톤",
+   "kind": "세미나",
+   "tags": [
+    "AI일반"
+   ],
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "deadline": null,
+   "place": "서울특별시 성동구",
+   "online": "오프라인",
+   "host": "",
+   "fee": "무료",
+   "url": "https://onoffmix.com/event/351544",
+   "group": "행사플랫폼",
+   "sources": [
+    "온오프믹스"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "세미나"
   },
   {
    "id": "4c7777654aa7",
@@ -3932,7 +4072,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -3955,7 +4095,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -3978,7 +4118,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -4001,7 +4141,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -4025,7 +4165,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -4048,7 +4188,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "웨비나"
   },
   {
@@ -4120,7 +4260,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -4143,7 +4283,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "전시회"
   },
   {
@@ -4190,7 +4330,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -4238,7 +4378,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -4263,7 +4403,7 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "교육"
   },
   {
@@ -4286,7 +4426,7 @@
     "온오프믹스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
   },
   {
@@ -4310,8 +4450,31 @@
     "이벤터스"
    ],
    "first_seen": "2026-10-16",
-   "is_new": true,
+   "is_new": false,
    "notion_kind": "세미나"
+  },
+  {
+   "id": "e3fbcc06edfe",
+   "title": "[중소기업 교육비 30,000원] AI를 활용한 교육과정개발 실무과정",
+   "kind": "교육",
+   "tags": [
+    "AI일반"
+   ],
+   "start": "2026-12-10",
+   "end": "2026-12-10",
+   "deadline": "2026-12-09",
+   "place": "서울 서초구 동작대로 50",
+   "online": "하이브리드",
+   "host": "HR에듀센터_인사드림(insadream)",
+   "fee": "유료",
+   "url": "https://event-us.kr/insadream/event/130885",
+   "group": "행사플랫폼",
+   "sources": [
+    "이벤터스"
+   ],
+   "first_seen": "2026-10-17",
+   "is_new": true,
+   "notion_kind": "교육"
   },
   {
    "id": "b170b81ab762",

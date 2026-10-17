@@ -108,8 +108,20 @@ def coex(h, base):
     return out
 
 
+def exco(h, base):
+    out = []
+    for tr in re.findall(r"(?s)<tr>(.*?)</tr>", h):
+        tds = re.findall(r"(?s)<td[^>]*>(.*?)</td>", tr)
+        if len(tds) < 6 or not _t(tds[2]):
+            continue
+        out.append(_item(_t(tds[2]), _dates(_t(tds[5])), "엑스코", base, _t(tds[1]),
+                         host=_t(tds[3]) or "엑스코"))
+    return out
+
+
 DIRECT_PARSERS = {
     "코엑스": coex,
+    "엑스코": exco,
     "전자신문": etnews,
     "KIoT": kiot,
     "대한기계학회": ksme,

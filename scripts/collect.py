@@ -36,7 +36,7 @@ FIRECRAWL_SOURCES = [
     ("코엑스", "전시장", "https://www.coex.co.kr/event/full-schedules/"),
     ("킨텍스", "전시장", "https://www.kintex.com/web/ko/event/clist.do"),
     ("벡스코", "전시장", "https://www.bexco.co.kr/kor/CMS/EventScheduleMgr/list.do?mCode=MN214"),
-    ("엑스코", "전시장", "https://www.exco.co.kr/schedule/sub01.html"),
+    ("엑스코", "전시장", "https://www.exco.co.kr/schedule/schedule_list.html"),
     ("수원컨벤션센터", "전시장", "https://www.scc.or.kr/events-3/"),
     # 자동차 기관·협회
     ("KATECH 교육", "자동차기관", "https://edu.katech.re.kr/core/?cid=24"),
@@ -143,6 +143,7 @@ def tag_event(title, desc=""):
 # 전시장 일정은 행사명이 짧아(예: "KES 2026") 세부 키워드가 없으므로 넓은 기술 키워드로 판정
 EXPO_BROAD = [
     ("AI일반", r"인공지능|\bAI\b"),
+    ("SDV", r"\bFIX\b|미래혁신기술"),  # 엑스코 FIX(미래모빌리티엑스포와 동시 개최)
     ("제조AI", r"제조|기계|소재|로봇|자동화"),
     ("차량용반도체", r"반도체|전자전|전자\s*부품"),
     ("디지털전환", r"ICT|디지털|스마트|전자|IoT|소프트웨어|\bSW\b"),
@@ -408,9 +409,9 @@ def from_firecrawl(sources, today, log, report, force=False):
             print(f"  {name}: 무료 직접 읽기", file=log)
         if name in CHANGE_DETECT and not direct:
             fp = page_fingerprint(url)
-            prev = hashes.get(name)
-            if (fp and not force and prev and prev.get("hash") == fp
-                    and (today - date.fromisoformat(prev["full"])).days < FULL_REFRESH_DAYS):
+            old = hashes.get(name)
+            if (fp and not force and old and old.get("hash") == fp
+                    and (today - date.fromisoformat(old["full"])).days < FULL_REFRESH_DAYS):
                 report[name] = "변경 없음 (읽기 생략)"
                 print(f"  {name}: 변경 없음 → firecrawl 생략", file=log)
                 continue
@@ -579,7 +580,9 @@ def main():
     else:
         raw = collect_all(args, today, log, report)
         # 이번에 수집하지 않은 firecrawl 소스(격주 건너뜀, --only 제외분)는 지난 결과를 유지
-        fetched = {e["source"] for e in raw} | {k for k, v in report.items() if not v.startswith(("격주", "변경 없음"))}
+        # 실패하거나 0건이 나온 곳도 '수집 못 함'으로 보고 지난 결과를 유지한다 (빈 결과가 기존 행사를 지우지 않도록)
+        fetched = {e["source"] for e in raw} | {k for k, v in report.items()
+                                                 if not v.startswith(("격주", "변경 없음", "실패", "0건"))}
         kept = [e for e in cache["raw"] if e["source"] not in fetched]
         for s in {e["source"] for e in kept}:
             report[s] = cache["report"].get(s, "").split(" (")[0] + " (지난 수집분)"
